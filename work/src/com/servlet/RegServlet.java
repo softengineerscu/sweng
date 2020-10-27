@@ -46,7 +46,7 @@ public class RegServlet extends HttpServlet {
             userDao.saveUser(user);
             req.setAttribute("info", "注册成功！ <br>");
         } else {
-            req.setAttribute("info", "此用户一存在！<br>");
+            req.setAttribute("info", "此用户以存在！<br>");
         }
         //转发到message.jsp页面
         req.getRequestDispatcher("message.jsp").forward(req, resp);
